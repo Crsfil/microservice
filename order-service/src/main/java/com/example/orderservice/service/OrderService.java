@@ -5,6 +5,7 @@ import com.example.common.events.OrderCreatedEvent;
 import com.example.common.model.OrderStatus;
 import com.example.orderservice.domain.OrderEntity;
 import com.example.orderservice.domain.OrderRepository;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.transaction.annotation.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -18,6 +19,9 @@ public class OrderService {
 
     private final OrderRepository orderRepository;
     private final KafkaTemplate<String, OrderCreatedEvent> kafkaTemplate;
+
+    @Value("${app.kafka.topics.orders-created}")
+    private String ordersCreatedTopic;
 
     @Transactional
     public OrderEntity createOrder(CreateOrderRequest request) {
@@ -35,7 +39,7 @@ public class OrderService {
                 .build();
 
         try {
-            kafkaTemplate.send("orders.created", event.getOrderId(), event).get();
+            kafkaTemplate.send(ordersCreatedTopic, event.getOrderId(), event).get();
         } catch (InterruptedException | ExecutionException e) {
             throw new RuntimeException(e);
         }

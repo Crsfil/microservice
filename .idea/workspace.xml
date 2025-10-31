@@ -4,21 +4,101 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d13bf0e2-16d1-4f57-940c-298572c8bb70" name="Изменения" comment="" />
+    <list default="true" id="d13bf0e2-16d1-4f57-940c-298572c8bb70" name="Изменения" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/example/common/dto/CreateOrderRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/example/common/events/OrderCreatedEvent$OrderCreatedEventBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/example/common/events/OrderCreatedEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/example/common/events/PaymentProcessedEvent$PaymentProcessedEventBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/example/common/events/PaymentProcessedEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/example/common/model/OrderStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/common-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/inventory-service.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/example/inventoryservice/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/example/inventoryservice/controller/InventoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/example/inventoryservice/domain/InventoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/example/inventoryservice/domain/InventoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/example/inventoryservice/service/InventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/example/inventoryservice/service/InventoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/test/java/com/example/inventoryservice/InventoryServiceReservationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/test/java/com/example/inventoryservice/InventoryServiceReservationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/com/example/inventoryservice/InventoryServiceApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/com/example/inventoryservice/controller/InventoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/com/example/inventoryservice/controller/dto/ReserveStockRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/com/example/inventoryservice/domain/InventoryItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/com/example/inventoryservice/domain/InventoryRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/com/example/inventoryservice/service/InventoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/target/surefire-reports/TEST-com.example.inventoryservice.InventoryServiceReservationTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/target/surefire-reports/com.example.inventoryservice.InventoryServiceReservationTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/target/test-classes/com/example/inventoryservice/InventoryServiceReservationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/target/test-classes/mockito-extensions/org.mockito.plugins.MockMaker" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-service.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/config/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/config/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/example/orderservice/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/test/java/com/example/orderservice/OrderServiceTransactionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/test/java/com/example/orderservice/OrderServiceTransactionalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/classes/com/example/orderservice/OrderServiceApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/classes/com/example/orderservice/config/KafkaConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/classes/com/example/orderservice/controller/OrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/classes/com/example/orderservice/domain/OrderEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/classes/com/example/orderservice/domain/OrderRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/classes/com/example/orderservice/service/OrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/surefire-reports/TEST-com.example.orderservice.OrderServiceTransactionalTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/surefire-reports/com.example.orderservice.OrderServiceTransactionalTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/test-classes/com/example/orderservice/OrderServiceTransactionalTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/test-classes/mockito-extensions/org.mockito.plugins.MockMaker" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/payment-service.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/example/paymentservice/config/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/example/paymentservice/config/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/example/paymentservice/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/example/paymentservice/service/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/target/classes/com/example/paymentservice/PaymentServiceApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/target/classes/com/example/paymentservice/config/KafkaConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/target/classes/com/example/paymentservice/service/PaymentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/target/surefire-reports/TEST-com.example.paymentservice.PaymentServiceContextTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/target/surefire-reports/com.example.paymentservice.PaymentServiceContextTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/target/test-classes/com/example/paymentservice/PaymentServiceContextTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/target/test-classes/mockito-extensions/org.mockito.plugins.MockMaker" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/newChat" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Crsfil"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:Crsfil/microservice.git",
+    "accountId": "f4a79c30-bb7b-44bc-bfb8-899998b52b22"
+  }
+}]]></component>
   <component name="HttpClientEndpointsTabState">
     <option name="cachedRequestData" value="&lt;CachedHttpClientTabRequests&gt;&#10;  &lt;entry key=&quot;325233bffe5441aeedc580272f52ccc9aa4ea54d&quot; value=&quot;###&amp;#10;POST http://localhost:8080/api/inventory&amp;#10;Content-Type: application/json&amp;#10;&amp;#10;{&amp;#10;  &amp;quot;sku&amp;quot;: &amp;quot;&amp;quot;,&amp;#10;  &amp;quot;quantity&amp;quot;: 0&amp;#10;}&quot; /&gt;&#10;&lt;/CachedHttpClientTabRequests&gt;" />
   </component>
-  <component name="HttpClientOnboardingState"><![CDATA[{
-  "isOnboardingCommentShown": true
-}]]></component>
+  <component name="HttpClientOnboardingState">{
+  &quot;isOnboardingCommentShown&quot;: true
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -42,9 +122,12 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.DemoApplication.executor": "Run",
     "Spring Boot.OrderServiceApplication.executor": "Run",
     "Spring Boot.PaymentServiceApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/al/IdeaProjects/microservice",
     "node.js.detected.package.eslint": "true",
@@ -105,8 +188,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
-        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.26830.84" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
       </set>
     </attachedChunks>
   </component>
@@ -130,6 +213,7 @@
       <workItem from="1761849237241" duration="163000" />
       <workItem from="1761850866126" duration="642000" />
       <workItem from="1761851547104" duration="15043000" />
+      <workItem from="1761935430634" duration="4499000" />
     </task>
     <servers />
   </component>

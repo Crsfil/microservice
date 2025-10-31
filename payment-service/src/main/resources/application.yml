@@ -1,0 +1,11 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: payment-service
+
+app:
+  kafka:
+    topics:
+      payments-processed: payments.processed
+      orders-created: orders.created

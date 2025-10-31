@@ -1,6 +1,0 @@
-com/example/inventoryservice/controller/InventoryController.class
-com/example/inventoryservice/domain/InventoryItem.class
-com/example/inventoryservice/service/InventoryService.class
-com/example/inventoryservice/InventoryServiceApplication.class
-com/example/inventoryservice/controller/dto/ReserveStockRequest.class
-com/example/inventoryservice/domain/InventoryRepository.class
