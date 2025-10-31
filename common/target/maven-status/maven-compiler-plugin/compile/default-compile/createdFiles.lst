@@ -1,0 +1,6 @@
+com/example/common/events/OrderCreatedEvent.class
+com/example/common/dto/CreateOrderRequest.class
+com/example/common/events/PaymentProcessedEvent.class
+com/example/common/events/PaymentProcessedEvent$PaymentProcessedEventBuilder.class
+com/example/common/model/OrderStatus.class
+com/example/common/events/OrderCreatedEvent$OrderCreatedEventBuilder.class

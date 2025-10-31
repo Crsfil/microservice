@@ -1,0 +1,6 @@
+/home/al/IdeaProjects/microservice/order-service/src/main/java/com/example/orderservice/service/OrderService.java
+/home/al/IdeaProjects/microservice/order-service/src/main/java/com/example/orderservice/controller/OrderController.java
+/home/al/IdeaProjects/microservice/order-service/src/main/java/com/example/orderservice/OrderServiceApplication.java
+/home/al/IdeaProjects/microservice/order-service/src/main/java/com/example/orderservice/config/KafkaConfig.java
+/home/al/IdeaProjects/microservice/order-service/src/main/java/com/example/orderservice/domain/OrderRepository.java
+/home/al/IdeaProjects/microservice/order-service/src/main/java/com/example/orderservice/domain/OrderEntity.java
