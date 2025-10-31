@@ -1,14 +1,15 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:orders;DB_CLOSE_DELAY=-1;MODE=PostgreSQL
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
+    url: ${ORDER_SERVICE_DATASOURCE_URL:jdbc:postgresql://localhost:5432/microservices?currentSchema=order_service}
+    driver-class-name: org.postgresql.Driver
+    username: ${ORDER_SERVICE_DATASOURCE_USERNAME:micro}
+    password: ${ORDER_SERVICE_DATASOURCE_PASSWORD:micro}
   jpa:
     hibernate:
       ddl-auto: validate
     properties:
       hibernate:
+        default_schema: order_service
         format_sql: true
     open-in-view: false
   kafka:
@@ -17,6 +18,3 @@ spring:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
   liquibase:
     change-log: classpath:db/changelog/db.changelog-master.yaml
-logging:
-  level:
-    org.springframework.orm.jpa: INFO

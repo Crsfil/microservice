@@ -1,0 +1,74 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001-order-schema
+      author: codex
+      comment: Create dedicated schema for order service
+      dbms: postgresql
+      preConditions:
+        onError: MARK_RAN
+        onFail: MARK_RAN
+      changes:
+        - sql:
+            sql: CREATE SCHEMA IF NOT EXISTS order_service;
+
+  - changeSet:
+      id: 002-order-table
+      author: codex
+      comment: Create orders table
+      changes:
+        - createTable:
+            tableName: orders
+            columns:
+              - column:
+                  name: id
+                  type: UUID
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: sku
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: quantity
+                  type: INTEGER
+                  constraints:
+                    nullable: false
+              - column:
+                  name: status
+                  type: VARCHAR(32)
+                  constraints:
+                    nullable: false
+        - addNotNullConstraint:
+            tableName: orders
+            columnName: status
+            columnDataType: VARCHAR(32)
+        - addIndex:
+            tableName: orders
+            indexName: idx_orders_sku
+            columns:
+              - column:
+                  name: sku
+
+  - changeSet:
+      id: 003-order-demo-data
+      author: codex
+      context: demo
+      comment: Seed demo order for manual checks
+      changes:
+        - insert:
+            tableName: orders
+            columns:
+              - column:
+                  name: id
+                  value: 00000000-0000-0000-0000-000000000001
+              - column:
+                  name: sku
+                  value: demo-sku
+              - column:
+                  name: quantity
+                  valueNumeric: 1
+              - column:
+                  name: status
+                  value: NEW

@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: ${INVENTORY_SERVICE_DATASOURCE_URL:jdbc:postgresql://localhost:5432/microservices?currentSchema=inventory_service}
+    driver-class-name: org.postgresql.Driver
+    username: ${INVENTORY_SERVICE_DATASOURCE_USERNAME:micro}
+    password: ${INVENTORY_SERVICE_DATASOURCE_PASSWORD:micro}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        default_schema: inventory_service
+        format_sql: true
+    open-in-view: false
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.yaml
