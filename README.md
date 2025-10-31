@@ -3,11 +3,57 @@
 Набор маленьких сервисов на **Spring Boot + Maven + Lombok + Kafka + JPA**, содержащий намеренно допущенные ошибки. Проект можно использовать как песочницу перед собеседованием: запустить тесты, убедиться, что они падают, и последовательно исправить типичные проблемы со спрингом.
 
 ### Как запускать тесты
-- Собрать всё сразу: `mvn clean test`  
-- По отдельным сервисам:
-  - `mvn -pl order-service test`
-  - `mvn -pl inventory-service test`
-  - `mvn -pl payment-service test`
+
+Тесты настроены на работу с PostgreSQL через профиль `test`. Убедитесь, что у вас запущен Docker с настроенной базой данных (см. раздел ниже).
+
+- **Запустить все тесты (рекомендуемый способ)**:
+  ```shell
+  mvn "-Dspring.profiles.active=test" clean test
+  ```
+
+- **Запустить тесты для одного модуля**:
+  ```shell
+  # Для order-service
+  mvn -pl order-service -am "-Dspring.profiles.active=test" test
+
+  # Для inventory-service
+  mvn -pl inventory-service -am "-Dspring.profiles.active=test" test
+  ```
+
+- **Запустить один проблемный тест (для отладки)**:
+  ```shell
+  # Проблема №1 в order-service
+  mvn -pl order-service -am "-Dspring.profiles.active=test" -Dtest=OrderServiceTransactionalTest test
+
+  # Проблема №2 в inventory-service
+  mvn -pl inventory-service -am "-Dspring.profiles.active=test" -Dtest=InventoryServiceReservationTest test
+
+  # Проблема №3 в payment-service
+  mvn -pl payment-service -am "-Dspring.profiles.active=test" -Dtest=PaymentServiceContextTest test
+  ```
+
+### Запуск тестов с PostgreSQL
+
+Этот способ использует Docker для запуска PostgreSQL с доступом без пароля, что идеально для локальных тестов.
+
+1.  **Настройка Docker**: Убедитесь, что в `docker-compose.yml` для сервиса `postgres` нет переменной `POSTGRES_USER` и установлен `POSTGRES_HOST_AUTH_METHOD=trust`. Это включает стандартного суперпользователя `postgres` с доступом без пароля.
+
+2.  **Очистка (если нужно)**: Если вы сталкиваетесь с ошибками аутентификации, возможно, нужно удалить старые данные PG. Выполните `docker compose down`, вручную удалите папку `./postgres-data` и затем снова запустите `docker compose up -d`.
+
+3.  **Запуск и создание БД**: Запустите контейнеры и создайте в PostgreSQL отдельные базы для тестов.
+    ```shell
+    # Запускаем все сервисы из docker-compose (включая PG)
+    docker compose up -d
+
+    # Создаем тестовые базы (имя контейнера может отличаться, проверьте через docker ps)
+    docker exec -it microservice-postgres-1 psql -U postgres -c "CREATE DATABASE orders_test;"
+    docker exec -it microservice-postgres-1 psql -U postgres -c "CREATE DATABASE inventory_test;"
+    ```
+
+4.  **Запуск тестов Maven**: Эта команда запустит тесты для `order-service` и `inventory-service`, используя созданные базы данных.
+    ```shell
+    mvn -pl order-service,inventory-service -am "-Dspring.profiles.active=test" "-Dspring.datasource.url.order-service=jdbc:postgresql://localhost:5432/orders_test" "-Dspring.datasource.url.inventory-service=jdbc:postgresql://localhost:5432/inventory_test" "-Dspring.datasource.username=postgres" "-Dspring.liquibase.enabled=false" "-Dspring.jpa.hibernate.ddl-auto=update" test
+    ```
 
 Kafka поднимается через `docker-compose.yml` (zookeeper + kafka). Для самих тестов Kafka не требуется, т.к. используется `@MockBean`, но пригодится для ручных проверок.
 

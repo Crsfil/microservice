@@ -1,13 +1,10 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:inventory;DB_CLOSE_DELAY=-1
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
+    url: jdbc:postgresql://localhost:5432/inventory_test
+    username: postgres
+    password: ""
   jpa:
     hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        format_sql: true
-
+      ddl-auto: create-drop # Для тестов лучше create-drop, чтобы каждый запуск был на чистой схеме
+  liquibase:
+    enabled: false # Отключаем Liquibase для тестов

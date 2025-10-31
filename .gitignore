@@ -1,0 +1,26 @@
+# Maven build
+target/
+.mvn/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+
+# Logs
+logs/
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Build outputs
+out/
+
+# Local data
+postgres-data/

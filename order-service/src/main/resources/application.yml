@@ -1,9 +1,19 @@
-# Общие настройки по умолчанию. Средо-специфичные настройки вынесены в профили.
 logging:
   level:
     org.springframework.orm.jpa: INFO
 
 spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/servicedb
+    username: user
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
   kafka:
     bootstrap-servers: localhost:9092
 
