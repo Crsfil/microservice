@@ -50,9 +50,9 @@
     docker exec -it microservice-postgres-1 psql -U postgres -c "CREATE DATABASE inventory_test;"
     ```
 
-4.  **Запуск тестов Maven**: Эта команда запустит тесты для `order-service` и `inventory-service`, используя созданные базы данных.
+4.  **Запуск тестов Maven**: Теперь профили `application-test.yml` используют порт 5433 по умолчанию, поэтому достаточно указать профиль `test`.
     ```shell
-    mvn -pl order-service,inventory-service -am "-Dspring.profiles.active=test" "-Dspring.datasource.url.order-service=jdbc:postgresql://localhost:5432/orders_test" "-Dspring.datasource.url.inventory-service=jdbc:postgresql://localhost:5432/inventory_test" "-Dspring.datasource.username=postgres" "-Dspring.liquibase.enabled=false" "-Dspring.jpa.hibernate.ddl-auto=update" test
+    mvn -pl order-service,inventory-service -am "-Dspring.profiles.active=test" test
     ```
 
 Kafka поднимается через `docker-compose.yml` (zookeeper + kafka). Для самих тестов Kafka не требуется, т.к. используется `@MockBean`, но пригодится для ручных проверок.

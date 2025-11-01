@@ -4,9 +4,9 @@ logging:
 
 spring:
   datasource:
-    url: jdbc:postgresql://postgres:5432/servicedb
-    username: user
-    password: password
+    url: jdbc:postgresql://postgres:5432/orders_db
+    username: postgres
+    password:
   jpa:
     hibernate:
       ddl-auto: validate

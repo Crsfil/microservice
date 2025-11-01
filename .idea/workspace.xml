@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13bf0e2-16d1-4f57-940c-298572c8bb70" name="Изменения" comment="масштабное обновление">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/17bddbd6-d6d9-4188-8f58-8b22fd7b3cd2/storage_v2/_src_/database/ORDERS.5VZyiw/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/17bddbd6-d6d9-4188-8f58-8b22fd7b3cd2/storage_v2/_src_/database/ORDERS.5VZyiw/schema/PUBLIC.aaZQjQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/17bddbd6-d6d9-4188-8f58-8b22fd7b3cd2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/17bddbd6-d6d9-4188-8f58-8b22fd7b3cd2/storage_v2/_src_/database/ORDERS.5VZyiw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/17bddbd6-d6d9-4188-8f58-8b22fd7b3cd2/storage_v2/_src_/database/ORDERS.5VZyiw/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/17bddbd6-d6d9-4188-8f58-8b22fd7b3cd2/storage_v2/_src_/database/ORDERS.5VZyiw/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory-service/src/main/resources/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application-test.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application-test.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" afterDir="false" />
     </list>
@@ -28,23 +34,27 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Crsfil"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Crsfil&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:Crsfil/microservice.git",
-    "accountId": "f4a79c30-bb7b-44bc-bfb8-899998b52b22"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Crsfil/microservice.git&quot;,
+    &quot;accountId&quot;: &quot;f4a79c30-bb7b-44bc-bfb8-899998b52b22&quot;
   }
-}]]></component>
+}</component>
   <component name="HttpClientEndpointsTabState">
     <option name="cachedRequestData" value="&lt;CachedHttpClientTabRequests&gt;&#10;  &lt;entry key=&quot;325233bffe5441aeedc580272f52ccc9aa4ea54d&quot; value=&quot;###&amp;#10;POST http://localhost:8080/api/inventory&amp;#10;Content-Type: application/json&amp;#10;&amp;#10;{&amp;#10;  &amp;quot;sku&amp;quot;: &amp;quot;&amp;quot;,&amp;#10;  &amp;quot;quantity&amp;quot;: 0&amp;#10;}&quot; /&gt;&#10;&lt;/CachedHttpClientTabRequests&gt;" />
   </component>
   <component name="HttpClientOnboardingState">{
   &quot;isOnboardingCommentShown&quot;: true
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
 }</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -57,40 +67,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.microservice [-pl,inventory-service,test].executor": "Run",
-    "Maven.microservice [-pl,order-service,test].executor": "Run",
-    "Maven.microservice [-pl,payment-service,test].executor": "Run",
-    "Maven.microservice [-q,-pl,order-service,-am...].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.DemoApplication.executor": "Run",
-    "Spring Boot.OrderServiceApplication.executor": "Run",
-    "Spring Boot.PaymentServiceApplication.executor": "Run",
-    "git-widget-placeholder": "dev",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/al/IdeaProjects/microservice",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Проект",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.microservice [-pl,inventory-service,test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.microservice [-pl,order-service,-am...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.microservice [-pl,order-service,test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.microservice [-pl,payment-service,test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.microservice [-q,-pl,order-service,-am...].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DemoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OrderServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PaymentServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/al/IdeaProjects/microservice&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Проект&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -105,7 +121,7 @@
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
-              <entry key="OrderServiceApplication" value="STOPPED" />
+              <entry key="OrderServiceApplication" value="FAILED" />
               <entry key="PaymentServiceApplication" value="FAILED" />
             </map>
           </value>
@@ -164,7 +180,20 @@
       <workItem from="1761849237241" duration="163000" />
       <workItem from="1761850866126" duration="642000" />
       <workItem from="1761851547104" duration="15043000" />
-      <workItem from="1761935430634" duration="10363000" />
+      <workItem from="1761935430634" duration="14118000" />
+      <workItem from="1761992911548" duration="1382000" />
+      <workItem from="1761994349740" duration="119000" />
+      <workItem from="1761994477818" duration="269000" />
+      <workItem from="1761994755266" duration="37000" />
+      <workItem from="1761994972279" duration="610000" />
+      <workItem from="1761995775247" duration="301000" />
+      <workItem from="1761997076542" duration="389000" />
+      <workItem from="1761997475620" duration="261000" />
+      <workItem from="1761997744834" duration="10000" />
+      <workItem from="1761997791447" duration="756000" />
+      <workItem from="1761998568526" duration="868000" />
+      <workItem from="1761999537295" duration="222000" />
+      <workItem from="1761999846661" duration="833000" />
     </task>
     <task id="LOCAL-00001" summary="масштабное обновление">
       <option name="closed" value="true" />
@@ -183,5 +212,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="масштабное обновление" />
     <option name="LAST_COMMIT_MESSAGE" value="масштабное обновление" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
