@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-repo/inventory-service-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/inventory-service-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-repo/order-service-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/order-service-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,27 +108,6 @@
         <option value="QuarkusRunConfigurationType" />
         <option value="SpringBootApplicationConfigurationType" />
       </set>
-    </option>
-    <option name="configurationStatuses">
-      <map>
-        <entry key="MavenRunConfiguration">
-          <value>
-            <map>
-              <entry key="microservice" value="FAILED" />
-            </map>
-          </value>
-        </entry>
-        <entry key="SpringBootApplicationConfigurationType">
-          <value>
-            <map>
-              <entry key="ConfigServerApplication" value="STOPPED" />
-              <entry key="InventoryServiceApplication" value="FAILED" />
-              <entry key="OrderServiceApplication" value="FAILED" />
-              <entry key="PaymentServiceApplication" value="FAILED" />
-            </map>
-          </value>
-        </entry>
-      </map>
     </option>
   </component>
   <component name="RunManager" selected="Maven.microservice">
@@ -261,6 +241,7 @@
       <workItem from="1762080769478" duration="1254000" />
       <workItem from="1762082101228" duration="2864000" />
       <workItem from="1762102838621" duration="6435000" />
+      <workItem from="1762112431801" duration="1807000" />
     </task>
     <task id="LOCAL-00001" summary="масштабное обновление">
       <option name="closed" value="true" />
@@ -286,7 +267,23 @@
       <option name="project" value="LOCAL" />
       <updated>1762107983737</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="коммит">
+      <option name="closed" value="true" />
+      <created>1762122339759</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1762122339759</updated>
+    </task>
+    <task id="LOCAL-00005" summary="коммит">
+      <option name="closed" value="true" />
+      <created>1762122364714</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1762122364714</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
