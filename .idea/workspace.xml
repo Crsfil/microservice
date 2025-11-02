@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d13bf0e2-16d1-4f57-940c-298572c8bb70" name="Изменения" comment="коммит">
+    <list default="true" id="d13bf0e2-16d1-4f57-940c-298572c8bb70" name="Изменения" comment="добавлен логин пароль для базы">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-repo/inventory-service-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/inventory-service-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-repo/order-service-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/order-service-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/inventory-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/inventory-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/order-service-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/order-service-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/order-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/order-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,8 +114,19 @@
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <map>
+              <entry key="ConfigServerApplication" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="RunManager" selected="Maven.microservice">
+  <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -118,34 +134,6 @@
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
-      <method v="2" />
-    </configuration>
-    <configuration name="microservice" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="cmdOptions" />
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list />
-            </option>
-            <option name="multimoduleDir" />
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
       <method v="2" />
     </configuration>
     <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -180,7 +168,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Maven.microservice" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.InventoryServiceApplication" />
       <item itemvalue="Spring Boot.OrderServiceApplication" />
@@ -241,7 +228,8 @@
       <workItem from="1762080769478" duration="1254000" />
       <workItem from="1762082101228" duration="2864000" />
       <workItem from="1762102838621" duration="6435000" />
-      <workItem from="1762112431801" duration="1807000" />
+      <workItem from="1762112431801" duration="2182000" />
+      <workItem from="1762123766820" duration="1060000" />
     </task>
     <task id="LOCAL-00001" summary="масштабное обновление">
       <option name="closed" value="true" />
@@ -283,7 +271,23 @@
       <option name="project" value="LOCAL" />
       <updated>1762122364714</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="добавлен логин пароль для базы">
+      <option name="closed" value="true" />
+      <created>1762123208800</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1762123208800</updated>
+    </task>
+    <task id="LOCAL-00007" summary="добавлен логин пароль для базы">
+      <option name="closed" value="true" />
+      <created>1762123281487</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1762123281487</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +296,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="масштабное обновление" />
     <MESSAGE value="коммит" />
-    <option name="LAST_COMMIT_MESSAGE" value="коммит" />
+    <MESSAGE value="добавлен логин пароль для базы" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавлен логин пароль для базы" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

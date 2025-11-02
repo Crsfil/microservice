@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="IU-252.27397.103">
-    <data-source name="postgres" uuid="260eaf04-4375-48b4-9b80-454dcb6fe515">
+    <data-source name="orders_db@localhost" uuid="6965c48c-0851-4e34-93e2-43eba3f2aeb0">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
       <secret-storage>master_key</secret-storage>
-      <auth-provider>no-auth</auth-provider>
       <user-name>postgres</user-name>
       <schema-mapping />
     </data-source>
