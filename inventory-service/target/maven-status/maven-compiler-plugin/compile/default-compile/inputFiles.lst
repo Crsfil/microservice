@@ -1,6 +1,0 @@
-/home/al/IdeaProjects/microservice/inventory-service/src/main/java/com/example/inventoryservice/service/InventoryService.java
-/home/al/IdeaProjects/microservice/inventory-service/src/main/java/com/example/inventoryservice/controller/dto/ReserveStockRequest.java
-/home/al/IdeaProjects/microservice/inventory-service/src/main/java/com/example/inventoryservice/controller/InventoryController.java
-/home/al/IdeaProjects/microservice/inventory-service/src/main/java/com/example/inventoryservice/domain/InventoryRepository.java
-/home/al/IdeaProjects/microservice/inventory-service/src/main/java/com/example/inventoryservice/domain/InventoryItem.java
-/home/al/IdeaProjects/microservice/inventory-service/src/main/java/com/example/inventoryservice/InventoryServiceApplication.java

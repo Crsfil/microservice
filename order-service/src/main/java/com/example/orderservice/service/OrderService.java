@@ -5,10 +5,9 @@ import com.example.common.events.OrderCreatedEvent;
 import com.example.common.model.OrderStatus;
 import com.example.orderservice.domain.OrderEntity;
 import com.example.orderservice.domain.OrderRepository;
-import org.springframework.transaction.annotation.Transactional;
-import lombok.RequiredArgsConstructor;
-import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.transaction.support.TransactionSynchronization;
+import org.springframework.transaction.support.TransactionSynchronizationManager;
 
 import java.util.concurrent.ExecutionException;
 
@@ -18,6 +17,9 @@ public class OrderService {
 
     private final OrderRepository orderRepository;
     private final KafkaTemplate<String, OrderCreatedEvent> kafkaTemplate;
+
+    @Value("${app.kafka.topics.orders-created}")
+    private String ordersCreatedTopic;
 
     @Transactional
     public OrderEntity createOrder(CreateOrderRequest request) {
@@ -34,11 +36,13 @@ public class OrderService {
                 .quantity(saved.getQuantity())
                 .build();
 
-        try {
-            kafkaTemplate.send("orders.created", event.getOrderId(), event).get();
-        } catch (InterruptedException | ExecutionException e) {
-            throw new RuntimeException(e);
-        }
+        TransactionSynchronizationManager.registerSynchronization(new TransactionSynchronization() {
+            @Override
+            public void afterCommit() {
+                kafkaTemplate.send(ordersCreatedTopic, event.getOrderId(), event);
+            }
+        });
+
         return saved;
     }
 }

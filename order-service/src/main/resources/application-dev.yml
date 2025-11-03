@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: order-service
+  config:
+    import: ""
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/orders_db?sslmode=disable
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics

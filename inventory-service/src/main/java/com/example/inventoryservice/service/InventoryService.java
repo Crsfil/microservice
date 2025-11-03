@@ -15,15 +15,20 @@ public class InventoryService {
     private final InventoryRepository inventoryRepository;
 
     public InventoryItem createItem(String sku, int quantity) {
+        inventoryRepository.findBySku(sku).ifPresent(item -> {
+            throw new IllegalArgumentException("SKU already exists: " + sku);
+        });
         InventoryItem item = new InventoryItem(sku, quantity);
         return inventoryRepository.save(item);
     }
 
+    @Transactional(readOnly = true)
     public InventoryItem getBySku(String sku) {
         return inventoryRepository.findBySku(sku)
                 .orElseThrow(() -> new EntityNotFoundException("No inventory for SKU " + sku));
     }
 
+    @Transactional
     public void reserve(String sku, int quantity) {
         InventoryItem item = getBySku(sku);
 
