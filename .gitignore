@@ -24,3 +24,9 @@ out/
 
 # Local data
 postgres-data/
+
+# Maven local repository
+.m2/
+
+# Config repo
+config-repo/

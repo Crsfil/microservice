@@ -4,7 +4,7 @@ id,sku,available_quantity
 3e4d5c6b-8a9b-4c7d-8e9f-1a2b3c4d5e6f,product-sku-003,489
 1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e,product-sku-004,56
 6f5e4d3c-2b1a-9c8d-8a7d-3b2c9e8f4a1b,product-sku-005,234
-9c8d6f5e-4d3c-2b1a-8a7d-3b2c9e8f4a1b9c8d,product-sku-006,456
+9c8d6f5e-4d3c-2b1a-8a7d-3b2c9e8f4a1b,product-sku-006,456
 a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d,product-sku-007,321
 7b8c9d0e-1f2a-3b4c-5d6e-1b2c3d4e5f6a,product-sku-008,89
 4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f,product-sku-009,178
@@ -23,7 +23,7 @@ ee99dd88-cc77-bb66-aa55-4433221100ff,product-sku-020,111
 00ffeedd-ccbb-aa99-8877-665544332211,product-sku-022,333
 44556677-8899-aabb-ccdd-eeff00112233,product-sku-023,444
 33221100-ffaa-bbdd-ccee-998877665544,product-sku-024,55
-778899aa-bbcc-ddeeff-0011-223344556677,product-sku-025,188
+778899aa-bbcc-ddee-ff00-112233445566,product-sku-025,188
 66554433-2211-00ff-eedd-ccbbaa998877,product-sku-026,277
 99887766-5544-3322-1100-ffeeddccbbaa,product-sku-027,366
 aabbccdd-eeff-0011-2233-445566778899,product-sku-028,455
