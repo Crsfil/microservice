@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    config:
+      enabled: false
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/inventory_test?sslmode=disable
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  liquibase:
+    enabled: false

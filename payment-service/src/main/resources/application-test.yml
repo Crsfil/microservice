@@ -2,6 +2,9 @@ spring:
   cloud:
     config:
       enabled: false
+  kafka:
+    listener:
+      auto-startup: false
 
 app:
   kafka:
