@@ -11,7 +11,7 @@ spring:
           uri: https://github.com/Crsfil/microservice-config.git
           force-pull: true
           username: Crsfil
-          password: REDACTED
+          password: $GITHUB_TOKEN
 
 management:
   endpoints:
