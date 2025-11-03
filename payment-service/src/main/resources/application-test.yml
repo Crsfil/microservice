@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      enabled: false
+
+app:
+  kafka:
+    topics:
+      payments-processed: payments-processed-topic
+      orders-created: orders-created-topic
