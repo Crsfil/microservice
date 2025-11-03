@@ -30,7 +30,8 @@ public class InventoryService {
 
     @Transactional
     public void reserve(String sku, int quantity) {
-        InventoryItem item = getBySku(sku);
+        InventoryItem item = inventoryRepository.findBySkuForUpdate(sku)
+                .orElseThrow(() -> new EntityNotFoundException("No inventory for SKU " + sku));
 
         if (item.getAvailableQuantity() < quantity) {
             throw new IllegalArgumentException("Insufficient stock for " + sku);

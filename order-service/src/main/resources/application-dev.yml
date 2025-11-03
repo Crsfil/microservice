@@ -21,3 +21,8 @@ management:
     web:
       exposure:
         include: health,info,metrics
+
+app:
+  kafka:
+    topics:
+      orders-created: orders-created-topic
