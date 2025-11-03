@@ -1,5 +1,6 @@
 package com.example.inventoryservice.controller;
 
+import com.example.inventoryservice.controller.dto.CreateInventoryItemRequest;
 import com.example.inventoryservice.controller.dto.InventoryItemResponse;
 import com.example.inventoryservice.controller.dto.ReserveStockRequest;
 import com.example.inventoryservice.domain.InventoryItem;
@@ -22,7 +23,7 @@ public class InventoryController {
     private final InventoryService inventoryService;
 
     @PostMapping
-    public ResponseEntity<InventoryItemResponse> create(@Valid @RequestBody ReserveStockRequest request) {
+    public ResponseEntity<InventoryItemResponse> create(@Valid @RequestBody CreateInventoryItemRequest request) {
         InventoryItem item = inventoryService.createItem(request.sku(), request.quantity());
         return ResponseEntity.ok(InventoryItemResponse.fromEntity(item));
     }

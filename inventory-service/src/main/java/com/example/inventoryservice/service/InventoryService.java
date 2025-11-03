@@ -28,6 +28,7 @@ public class InventoryService {
                 .orElseThrow(() -> new EntityNotFoundException("No inventory for SKU " + sku));
     }
 
+    @Transactional
     public void reserve(String sku, int quantity) {
         InventoryItem item = getBySku(sku);
 
